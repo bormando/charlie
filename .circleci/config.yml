@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/maven@0.0.12
+      - image: circleci/openjdk:8-jdk-stretch
       - image: selenium/standalone-chrome:latest
     steps:
       - checkout
