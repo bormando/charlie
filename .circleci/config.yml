@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
       - run: mvn clean test
-      - run: allure generate allure-results -o allure-report
+      - run: mvn allure:report
       - store_artifacts:
           path: target/site/allure-maven-plugin
