@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/maven@0.0.12
+      - image: selenium/standalone-chrome:latest
+    steps:
+      - checkout
+      - run: mvn clean test
