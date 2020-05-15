@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Search" verbose="1" >
+    <test name="Specific result found" >
+        <parameter name="searchValue" value="Schwarzenegger"/>
+        <parameter name="expectedValue" value="Arnold Schwarzenegger" />
+        <classes>
+            <class name="tests.SearchTests" />
+        </classes>
+    </test>
+</suite>

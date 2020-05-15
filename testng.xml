@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke" verbose="1" >
+    <parameter name="browserAddress" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browserName" value="chrome" />
+    <parameter name="implicitlyWait" value="15" />
+    <suite-files>
+        <suite-file path="suites/login.xml" />
+        <suite-file path="suites/search.xml" />
+        <suite-file path="suites/recentchanges.xml" />
+    </suite-files>
+</suite>

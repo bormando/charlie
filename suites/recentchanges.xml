@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Recent Changes" verbose="1" >
+    <test name="Show selected number of changes" >
+        <parameter name="numbers" value="50, 100"/>
+        <classes>
+            <class name="tests.RecentChangesTests" />
+        </classes>
+    </test>
+</suite>

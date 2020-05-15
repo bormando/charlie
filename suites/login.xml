@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Log In" verbose="1" >
+    <test name="Log in with wrong login and password" >
+        <parameter name="username" value="Genesis"/>
+        <parameter name="password" value="Mama" />
+        <classes>
+            <class name="tests.LogInTests" />
+        </classes>
+    </test>
+</suite>
