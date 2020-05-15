@@ -7,3 +7,6 @@ jobs:
     steps:
       - checkout
       - run: mvn clean test
+      - run: allure generate allure-results -o allure-report
+      - store_artifacts:
+          path: allure-report
